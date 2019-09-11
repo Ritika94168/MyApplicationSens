@@ -35,7 +35,7 @@ sendorManager.registerListener(this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
         sendorManager.unregisterListener(this);
     }
     MediaPlayer mp;
-    boolean isrunning=false;
+    boolean isrunning=true;
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         Toast.makeText(getApplicationContext(), ""+sensorEvent.values[0], Toast.LENGTH_SHORT).show();
